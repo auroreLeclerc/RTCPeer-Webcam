@@ -285,30 +285,30 @@ export class WssClient extends IceClient {
 				chat(data);
 			} else if (data instanceof AnswerInterface) {
 				switch (data.type) {
-					case "IceCandidate":
-						this.newCandidate(
-							new RTCIceCandidate(data.answer as RTCIceCandidateInit),
-							data.user
-						);
-						break;
-					case "RTCPeerAnswer":
-						this.peerAnswer(
-							new RTCSessionDescription(
+				case "IceCandidate":
+					this.newCandidate(
+						new RTCIceCandidate(data.answer as RTCIceCandidateInit),
+						data.user
+					);
+					break;
+				case "RTCPeerAnswer":
+					this.peerAnswer(
+						new RTCSessionDescription(
 								data.answer as RTCSessionDescriptionInit
-							),
-							data.user
-						);
-						break;
-					case "RTCPeerOffer":
-						this.peerOffer(
-							new RTCSessionDescription(
+						),
+						data.user
+					);
+					break;
+				case "RTCPeerOffer":
+					this.peerOffer(
+						new RTCSessionDescription(
 								data.answer as RTCSessionDescriptionInit
-							),
-							data.user
-						);
-						break;
-					default:
-						throw new TypeError(JSON.stringify(data));
+						),
+						data.user
+					);
+					break;
+				default:
+					throw new TypeError(JSON.stringify(data));
 				}
 			} else throw new TypeError(JSON.stringify(data));
 		};
