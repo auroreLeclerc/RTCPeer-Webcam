@@ -6,7 +6,6 @@ const nextConfig: NextConfig = config.frontend.startNextAsFront
 	: {
 		output: "export",
 		distDir: "../out/",
-		// assetPrefix: "",
 		basePath: "/RTCPeer-Webcam/out",
 		webpack: (config) => {
 			config.optimization.splitChunks = {
