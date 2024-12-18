@@ -1,5 +1,5 @@
 # RTCPeer-Webcam
-Webcam video exchange using RTCPeerConnection and WebSocket
+Webcam video exchange using RTCPeerConnection and WebSocket built with React/NextJS and NestJS
 
 ![GitHub language count](https://img.shields.io/github/languages/count/auroreLeclerc/RTCPeer-Webcam)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fauroreleclerc.github.io%2FRTCPeer-Webcam%2Fout%2F)

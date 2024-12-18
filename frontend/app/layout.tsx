@@ -6,7 +6,7 @@ import { theme } from "./misc/theme";
 
 export const metadata: Metadata = {
 	title: "RTCPeer-Webcam",
-	description: "Webcam video exchange using RTCPeerConnection and WebSocket"
+	description: "Webcam video exchange using RTCPeerConnection and WebSocket built with React/NextJS and NestJS"
 };
 
 export default function RootLayout({
