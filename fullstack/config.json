@@ -1,6 +1,6 @@
 {
 	"frontend": {
-		"startNextAsFront": false
+		"startNextAsFront": true
 	},
 	"backend": {
 		"http": {
